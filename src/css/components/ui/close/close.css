@@ -1,0 +1,33 @@
+.close {
+	display: inline-flex;
+	border-radius: 50%;
+	background-color: #f4f4f4;
+	color: #a2aab0;
+	font-size: 14px;
+	padding: 0.572em;
+	transition: color .25s, background-color .25s;
+	cursor: pointer;
+	line-height: 1;
+}
+
+.close:hover {
+	color: #112b42;
+}
+
+.close:before {
+	content: "\e915";
+	font-family: iconfont;
+}
+
+.close.close--dark {
+	color: #fff;
+	background-color: rgba(17, 43, 66, 0.3);
+}
+
+.close.close--dark:hover {
+	background-color: rgba(17, 43, 66, 0.7);
+}
+
+.close.close--dark:active {
+	background-color: rgba(17, 43, 66, 1);
+}

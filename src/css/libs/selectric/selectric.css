@@ -1,0 +1,201 @@
+.selectric-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.selectric-responsive {
+    width: 100%;
+}
+
+.selectric {
+    border: 1px solid #CDCFD0;
+    border-radius: 3em;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.25s;
+}
+.selectric .label {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 43px 0 15px;
+    font-size: 16px;
+    line-height: 43px;
+    color: #112B42;
+    height: 43px;
+    user-select: none;
+}
+.selectric .button {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    color: #D4D7D9;
+    text-align: center;
+    transition: transform 0.25s;
+}
+
+.selectric-focus .selectric {
+    border-color: #418ccf;
+}
+
+.selectric-hover .selectric {
+    border-color: #418CCF;
+}
+
+.selectric-open {
+    z-index: 20;
+}
+.selectric-open .selectric {
+    border-color: #418CCF;
+}
+.selectric-open .selectric-items {
+    display: block;
+}
+.selectric-open .button {
+    transform: rotate(180deg);
+    color: #418CCF;
+}
+
+.selectric-disabled {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: default;
+    user-select: none;
+}
+
+.selectric-hide-select {
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+.selectric-hide-select select {
+    position: absolute;
+    left: -100%;
+}
+.selectric-hide-select.selectric-is-native {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.selectric-hide-select.selectric-is-native select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    z-index: 1;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.selectric-input {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    outline: none !important;
+    border: none !important;
+    *font: 0/0 a !important;
+    background: none !important;
+}
+
+.selectric-temp-show {
+    position: absolute !important;
+    visibility: hidden !important;
+    display: block !important;
+}
+
+/* Items box */
+.selectric-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border-radius: 20px;
+    z-index: -1;
+    box-shadow: 0 4px 15px rgba(0, 17, 51, 0.1);
+    padding: 10px;
+}
+.selectric-items .selectric-scroll {
+    height: 100%;
+    overflow: auto;
+}
+.selectric-items .selectric-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+.selectric-items .selectric-scroll::-webkit-scrollbar-track {
+    background: #F4F4F4;
+    border-radius: 10px;
+}
+.selectric-items .selectric-scroll::-webkit-scrollbar-thumb {
+    background-color: #D4D7D9;
+    border-radius: 10px;
+}
+.selectric-above .selectric-items {
+    top: auto;
+    bottom: 100%;
+}
+.selectric-items ul, .selectric-items li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 20px;
+}
+.selectric-items li {
+    display: block;
+    padding: 10px 15px;
+    color: #112B42;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.selectric-items li.selected {
+    font-weight: 700;
+}
+.selectric-items li.highlighted {
+    font-weight: 700;
+}
+.selectric-items li:hover {
+    background: rgba(65, 140, 207, 0.1);
+}
+.selectric-items .disabled {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: default !important;
+    background: none !important;
+    color: #666 !important;
+    user-select: none;
+}
+.selectric-items .selectric-group .selectric-group-label {
+    font-weight: bold;
+    padding-left: 10px;
+    cursor: default;
+    user-select: none;
+    background: none;
+    color: #444;
+}
+.selectric-items .selectric-group.disabled li {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+.selectric-items .selectric-group li {
+    padding-left: 25px;
+}

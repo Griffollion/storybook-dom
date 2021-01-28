@@ -1,0 +1,231 @@
+[class^="ic-"], [class*=" ic-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "iconfont" !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ic-facebook:before {
+	content: "\e900";
+}
+
+.ic-google:before {
+	content: "\e901";
+}
+
+.ic-g-plus:before {
+	content: "\e902";
+}
+
+.ic-instagram:before {
+	content: "\e903";
+}
+
+.ic-mailru:before {
+	content: "\e904";
+}
+
+.ic-ok:before {
+	content: "\e905";
+}
+
+.ic-phone-call:before {
+	content: "\e906";
+}
+
+.ic-tg:before {
+	content: "\e907";
+}
+
+.ic-tw:before {
+	content: "\e908";
+}
+
+.ic-viber-2:before {
+	content: "\e909";
+}
+
+.ic-vk:before {
+	content: "\e90a";
+}
+
+.ic-yandex:before {
+	content: "\e90b";
+}
+
+.ic-youtube:before {
+	content: "\e90c";
+}
+
+.ic-arrow-up:before {
+	content: "\e90d";
+}
+
+.ic-arrow-down:before {
+	content: "\e90e";
+}
+
+.ic-arrow-right:before {
+	content: "\e90f";
+}
+
+.ic-arrow-left:before {
+	content: "\e910";
+}
+
+.ic-arrow-long-up:before {
+	content: "\e911";
+}
+
+.ic-arrow-long-down:before {
+	content: "\e912";
+}
+
+.ic-arrow-long-right:before {
+	content: "\e913";
+}
+
+.ic-arrow-long-left:before {
+	content: "\e914";
+}
+
+.ic-close:before {
+	content: "\e915";
+}
+
+.ic-exit:before {
+	content: "\e916";
+}
+
+.ic-log-in:before {
+	content: "\e917";
+}
+
+.ic-menu:before {
+	content: "\e918";
+}
+
+.ic-contour:before {
+	content: "\e919";
+}
+
+.ic-drow-contour:before {
+	content: "\e91a";
+}
+
+.ic-map:before {
+	content: "\e91b";
+}
+
+.ic-map-pin:before {
+	content: "\e91c";
+}
+
+.ic-metro:before {
+	content: "\e91d";
+}
+
+.ic-metro-blue:before {
+	content: "\e91e";
+	color: #2416ad;
+}
+
+.ic-metro-red:before {
+	content: "\e91f";
+	color: #d91717;
+}
+
+.ic-walk:before {
+	content: "\e920";
+}
+
+.ic-calendar:before {
+	content: "\e921";
+}
+
+.ic-crown:before {
+	content: "\e922";
+}
+
+.ic-file-text:before {
+	content: "\e923";
+}
+
+.ic-home:before {
+	content: "\e924";
+}
+
+.ic-user:before {
+	content: "\e925";
+}
+
+.ic-mail:before {
+	content: "\e926";
+}
+
+.ic-phone:before {
+	content: "\e927";
+}
+
+.ic-bell:before {
+	content: "\e928";
+}
+
+.ic-check:before {
+	content: "\e929";
+}
+
+.ic-edit:before {
+	content: "\e92a";
+}
+
+.ic-heart:before {
+	content: "\e92b";
+}
+
+.ic-heart-filled:before {
+	content: "\e92c";
+}
+
+.ic-heart-search:before {
+	content: "\e92d";
+}
+
+.ic-plus-circle:before {
+	content: "\e92e";
+}
+
+.ic-print:before {
+	content: "\e92f";
+}
+
+.ic-search:before {
+	content: "\e930";
+}
+
+.ic-share:before {
+	content: "\e931";
+}
+
+.ic-trash:before {
+	content: "\e932";
+}
+
+.ic-exclamation-in-circle:before {
+	content: "\e933";
+}
+
+.ic-info-in-circle:before {
+	content: "\e934";
+}
+
+.ic-question-in-circle:before {
+	content: "\e935";
+}
