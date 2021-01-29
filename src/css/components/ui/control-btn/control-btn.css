@@ -1,0 +1,20 @@
+.control-btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 17, 51, 0.15);
+	transition: box-shadow .25s;
+	padding: 0.875em;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.control-btn [class^="ic-"],
+.control-btn [class*=" ic-"] {
+	font-size: 0.75em;
+}
+
+.control-btn:hover {
+	box-shadow: 0 4px 15px rgba(0, 17, 51, 0.1)
+}
