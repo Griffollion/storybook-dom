@@ -107,4 +107,41 @@
 	padding: 0.75em 0.9375em;
 }
 
+.tabs.tabs--dark.tabs--medium .tabs__nav-btn {
+	padding: 0.813em 0.9375em;
+}
+
 /* tabs--medium //end */
+
+/* tabs--bg */
+.tabs.tabs--bg .tabs__nav-list {
+	display: inline-flex;
+	max-width: 100%;
+	position: relative;
+}
+
+.tabs.tabs--bg .tabs__nav-list:before {
+	content: "";
+	position: absolute;
+	left: 1px;
+	top: 0;
+	width: calc(100% - 2px);
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+	border-radius: 3em;
+}
+
+.tabs.tabs--dark.tabs--bg .tabs__nav-list:before {
+	background-color: rgba(17, 43, 66, 0.7);
+}
+
+.tabs.tabs--dark.tabs--bg .tabs__nav-btn {
+	background-color: transparent;
+}
+
+.tabs.tabs--dark.tabs--bg .tabs__nav-item:not(.active) .tabs__nav-btn:not(.active):hover {
+	background-color: rgba(17, 43, 66, 0.7);
+}
+
+/* tabs--bg //end */
