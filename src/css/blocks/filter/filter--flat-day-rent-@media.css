@@ -1,0 +1,29 @@
+@media screen and (min-width: 600px) {
+	.filter.filter--flat-day-rent .filter__grid {
+		grid-template-columns: 1fr 70px 1fr 70px;
+		grid-template-areas: "cell-1 cell-1 cell-2 cell-2" "cell-3 cell-3 cell-3 btn";
+		grid-gap: 20px;
+	}
+
+	.filter.filter--flat-day-rent .filter__cell:nth-child(1) {
+		grid-area: cell-1
+	}
+	.filter.filter--flat-day-rent .filter__cell:nth-child(2) {
+		grid-area: cell-2
+	}
+	.filter.filter--flat-day-rent .filter__cell:nth-child(3) {
+		grid-area: cell-3
+	}
+
+	.filter.filter--flat-day-rent .filter__cell.filter__cell--btn {
+		grid-area: btn
+	}
+}
+
+@media screen and (min-width: 1260px) {
+	.filter.filter--flat-day-rent .filter__grid {
+		grid-template-columns: 1fr 1fr 1fr 160px;
+		grid-template-areas: "cell-1 cell-2 cell-3 btn";
+		grid-gap: 0;
+	}
+}

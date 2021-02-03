@@ -1,0 +1,43 @@
+.quantitative-counter {
+	display: grid;
+	align-items: center;
+	grid-template-columns: fit-content(100%) fit-content(100%);
+	grid-column-gap: 30px;
+}
+
+.quantitative-counter__title {
+	font-weight: 700;
+}
+
+.quantitative-counter__subtitle {
+	font-size: 14px;
+	color: #a2aab0;
+}
+
+.quantitative-counter__controls {
+	display: grid;
+	grid-template-columns: fit-content(100%) 30px fit-content(100%);
+	align-items: center;
+	grid-column-gap: 10px;
+}
+
+.quantitative-counter__btn {
+	width: 40px;
+	height: 40px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #cdcfd0;
+	border-radius: 50%;
+	transition: background-color .25s, border-color .25s;
+	cursor: pointer;
+}
+
+.quantitative-counter__btn:hover {
+	background-color: #eff7ff;
+	border-color: #eaebee;
+}
+
+.quantitative-counter__text {
+	text-align: center;
+}
