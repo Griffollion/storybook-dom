@@ -1,0 +1,37 @@
+.filter__wrapper {
+	width: 100%;
+}
+
+.filter__grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 20px;
+}
+
+.filter__cell {
+	min-height: 70px;
+	background-color: #fff;
+	border-radius: 100px;
+	transition: background-color .25s;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.filter__cell-label {
+	font-size: 14px;
+	position: absolute;
+	left: 26px;
+	top: 13px;
+	pointer-events: none;
+}
+
+/* filter__cell--btn */
+.filter__cell.filter__cell--btn {
+	background-color: transparent;
+	display: flex;
+	justify-content: flex-end;
+	padding: 8px;
+}
+
+/* filter__cell--btn //end */

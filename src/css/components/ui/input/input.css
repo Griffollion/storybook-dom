@@ -37,6 +37,19 @@
 	font-family: iconfont;
 }
 
+.input__control[data-input="password"] {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.input__control[data-input="password"]:before {
+	content: "\e99b";
+}
+
+.input__control[data-input="password"].switched:before {
+	content: "\e99c";
+}
+
 .input label {
 	position: absolute;
 	top: 50%;
@@ -183,22 +196,21 @@
 	background-color: #f4f4f4;
 }
 
-.input.input--labeled input::-webkit-input-placeholder {
+.input.input--labeled:not(.active) input::-webkit-input-placeholder {
 	opacity: 0;
 }
 
-.input.input--labeled input::-moz-placeholder {
+.input.input--labeled:not(.active) input::-moz-placeholder {
 	opacity: 0;
 }
 
-.input.input--labeled input:-ms-input-placeholder {
+.input.input--labeled:not(.active) input:-ms-input-placeholder {
 	opacity: 0;
 }
 
-.input.input--labeled input:-moz-placeholder {
+.input.input--labeled:not(.active) input:-moz-placeholder {
 	opacity: 0;
 }
-
 /* input--labeled //end */
 
 /* .input--ic-orange */
@@ -227,4 +239,14 @@
 
 /* input--medium //end */
 
+input {
+	font: inherit;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s !important;
+}
 

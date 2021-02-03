@@ -14,13 +14,13 @@
 }
 
 .news-feed__btn.news-feed__btn--prev {
-	left: 0;
-	transform: translate(-50%, -50%);
+	left: 30px;
+	transform: translateY(-50%);
 }
 
 .news-feed__btn.news-feed__btn--next {
-	right: 0;
-	transform: translate(50%, -50%);
+	right: 30px;
+	transform: translateY(-50%);
 }
 
 .news-feed__grid-wrapper {
@@ -156,8 +156,8 @@
 
 .news-feed__item.news:before {
 	content: "";
-	width: 200px;
-	height: 200px;
+	width: 400%;
+	height: 400%;
 	background-color: #fff;
 	opacity: 0.1;
 	position: absolute;

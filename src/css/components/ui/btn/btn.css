@@ -66,15 +66,14 @@
 	color: #fff;
 	z-index: 1;
 	overflow: hidden;
+	transition: filter .25s;
 }
 
 .btn.btn--primary:before,
 .btn.btn--primary:after {
 	content: "";
 	position: absolute;
-	left: 0;
 	top: 0;
-	width: 100%;
 	height: 100%;
 	pointer-events: none;
 	transition: transform .25s ease-in-out, border-color .25s;
@@ -83,14 +82,17 @@
 
 .btn.btn--primary:after {
 	background: linear-gradient(90deg, #f74c54 0%, #ff7f4e 100%);
+	width: 100%;
+	left: 0;
 	transform: translateX(0);
 }
 
 .btn.btn--primary:before {
 	transform: translateX(100%);
+	width: calc(100% + 2px);
 	background: #ff7f4e;
 	box-sizing: border-box;
-	border: 1px solid transparent;
+	left: -2px;
 }
 
 .btn.btn--primary:hover:before {
@@ -102,10 +104,9 @@
 	transform: translateX(-100%);
 }
 
-.btn.btn--primary:active:before,
-.btn.btn--primary:focus:before {
-	border-color: #ac3f16;
-	border-radius: 60px;
+.btn.btn--primary:active,
+.btn.btn--primary:focus {
+	filter: brightness(1.1);
 }
 
 .btn.btn--primary.disabled {
@@ -119,6 +120,80 @@
 }
 
 /* btn--primary //end */
+
+/* btn--filter */
+.btn.btn--filter {
+	color: #fff;
+	z-index: 1;
+	overflow: hidden;
+	height: 100%;
+	width: 54px;
+	padding: 0;
+	justify-content: flex-start;
+	transition: width .25s;
+}
+
+.btn.btn--filter [class^="ic-"],
+.btn.btn--filter [class*=" ic-"] {
+	padding-left: 19px;
+	padding-right: 19px;
+}
+
+.btn.btn--filter:before,
+.btn.btn--filter:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	transition: transform .25s ease-in-out, border-color .25s;
+	z-index: -1;
+}
+
+.btn.btn--filter:after {
+	background: linear-gradient(90deg, #f74c54 0%, #ff7f4e 100%);
+	transform: translateX(0);
+}
+
+.btn.btn--filter:before {
+	transform: translateX(100%);
+	width: calc(100% + 2px);
+	background: #ff7f4e;
+	box-sizing: border-box;
+	left: -2px;
+}
+
+.btn.btn--filter:hover:before {
+	transform: translateX(0);
+
+}
+
+.btn.btn--filter:hover {
+	width: 140px;
+}
+
+.btn.btn--filter:hover:after {
+	transform: translateX(-100%);
+}
+
+.btn.btn--filter:active:before,
+.btn.btn--filter:focus:before {
+	filter: brightness(1.1);
+}
+
+.btn.btn--filter.disabled {
+	background-color: #a2aab0;
+	color: #fff;
+}
+
+.btn.btn--filter.disabled:before,
+.btn.btn--filter.disabled:after {
+	display: none;
+}
+
+/* btn--filter //end */
 
 .btn.btn--wide {
 	min-width: 168px;

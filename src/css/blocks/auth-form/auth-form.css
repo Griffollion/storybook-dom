@@ -1,0 +1,66 @@
+.auth-form {
+	position: relative;
+}
+
+.auth-form__wrapper {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.auth-form__title,
+.auth-form__subtitle {
+	text-align: center;
+}
+
+.auth-form__title {
+	margin-bottom: 15px;
+}
+
+.auth-form__subtitle {
+	margin-bottom: 50px;
+}
+
+.auth-form__row {
+	display: grid;
+	grid-template-columns: 1fr fit-content(100%);
+	grid-column-gap: 10px;
+}
+
+.auth-form__row.hidden {
+	display: none;
+}
+
+.auth-form__delimiter {
+	margin-top: 50px;
+	margin-bottom: 40px;
+	position: relative;
+	border: 1px solid #eaebee;
+}
+
+.auth-form__delimiter:before {
+	content: "ИЛИ";
+	background-color: #fff;
+	font-size: 14px;
+	padding: 2px;
+	box-sizing: border-box;
+	z-index: 2;
+	color: #a2aab0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.auth-form__social {
+	display: flex;
+	justify-content: center;
+}
+
+.auth-form__license {
+	font-size: 14px;
+	margin-top: 50px;
+}
+
+.auth-form__license > * {
+	text-align: center;
+}

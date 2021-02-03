@@ -1,8 +1,4 @@
 @media screen and (min-width: 1024px) {
-	.news-feed {
-		margin-right: 60px;
-		margin-left: 60px;
-	}
 	.news-feed__btn {
 		display: inline-flex;
 	}
