@@ -1,0 +1,124 @@
+.select {
+	position: relative;
+}
+
+.select:not(.active) .selectric .label {
+	color: #a2aab0;
+}
+
+/* .select.error */
+.select.error .selectric {
+	border-color: #f74c54;
+}
+
+.select.error .selectric .button {
+	color: #f74c54;
+}
+
+/* .select.error */
+
+/* .select.success */
+.select.success .selectric {
+	border-color: #4fb543;
+}
+
+.select.success .selectric .button {
+	color: #4fb543;
+}
+
+/* .select.success //end */
+
+/* .select.disabled */
+.select.disabled {
+	pointer-events: none;
+}
+
+.select.disabled .selectric {
+	border-color: #cdcfd0;
+	background-color: #f4f4f4;
+}
+
+.select.disabled .selectric .label {
+	color: #a2aab0;
+}
+
+.select.disabled .selectric .button {
+	color: #d4d7d9;
+}
+
+/* .select.disabled //end */
+
+/*-------------*/
+
+/* select--labeled */
+.select__label {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 15px;
+	pointer-events: none;
+	opacity: 0;
+	z-index: -1;
+	background-color: #fff;
+	color: #a2aab0;
+	transition: color .25s;
+}
+
+.select.select--labeled .select__label {
+	opacity: 1;
+	z-index: 21;
+	transition: transform .25s, font-size 0.25s, color .25s;
+}
+
+.select.select--labeled:hover .select__label {
+	color: #418ccf;
+}
+
+.select.select--labeled .selectric .label {
+	opacity: 0;
+	transition: opacity .25s;
+}
+
+/* select--labeled.active */
+.select.select--labeled.active .select__label {
+	transform: translateY(-175%);
+	font-size: 0.8125em;
+	left: 1.1em;
+}
+
+.select.select--labeled.active .selectric {
+	pointer-events: auto;
+}
+
+.select.select--labeled.active .selectric .label {
+	opacity: 1;
+}
+
+.select.select--labeled .selectric-focus ~ .select__label {
+	color: #418ccf;
+}
+
+/* select--labeled.active //end */
+
+/* select--labeled.error */
+.select.select--labeled.error .select__label {
+	color: #f74c54
+}
+
+/* select--labeled.error //end */
+
+/* select--labeled.success */
+.select.select--labeled.success .select__label {
+	color: #4fb543
+}
+
+/* select--labeled.success //end */
+
+/* select--labeled.disabled */
+.select.select--labeled.disabled .select__label {
+	background-color: transparent;
+}
+
+/* select--labeled.disabled //end */
+
+/* select--labeled //end */

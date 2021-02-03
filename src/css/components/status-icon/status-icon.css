@@ -1,0 +1,27 @@
+.status-icon {
+	background: rgba(255, 127, 78, 0.85);
+	line-height: 1;
+	display: inline-flex;
+	align-items: center;
+	color: #fff;
+	font-weight: 700;
+	box-sizing: border-box;
+	padding: 0.1666666666666667em;
+	border-radius: 0.1666666666666667em;
+}
+
+.status-icon [class^="ic-"], .status-icon [class*=" ic-"] {
+	font-size: 0.6667em;
+}
+
+/* status-icon--with-text */
+.status-icon.status-icon--with-text {
+	padding: 0.1666666666666667em 0.3333333333333333em;
+}
+
+.status-icon.status-icon--with-text > span {
+	font-size: 0.44em;
+	padding-left: 0.6153846153846154em;
+}
+
+/* status-icon--with-text //end */

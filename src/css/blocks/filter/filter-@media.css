@@ -1,0 +1,68 @@
+@media screen and (min-width: 1200px) {
+	.filter__grid {
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto;
+		grid-auto-flow: column;
+		grid-row-gap: 20px;
+		background-color: #fff;
+		border-radius: 100px;
+	}
+
+	.filter__cell {
+		background-color: transparent;
+		transition: box-shadow .25s, background-color .25s;
+	}
+
+	.filter__cell:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 44px;
+		width: 1px;
+		background-color: #eaebee;
+	}
+
+	.filter__cell:first-child:before,
+	.filter__cell:last-child:before {
+		display: none;
+	}
+
+	.filter__cell:hover {
+		background-color: #eff7ff;
+	}
+	.filter__cell:hover:before {
+		opacity: 0;
+	}
+
+	.filter__cell:hover ~ .filter__cell:before {
+		opacity: 0;
+	}
+
+	/* .filter__cell.active */
+	.filter__cell.active {
+		background: #fff;
+		box-shadow: 0 0 8px rgba(0, 17, 51, 0.2);
+	}
+
+	.filter__cell.active:before {
+		opacity: 0;
+	}
+
+	.filter__cell.active ~ .filter__cell:before {
+		opacity: 0;
+	}
+	/* .filter__cell.active //end */
+	/* filter__cell--btn */
+	.filter__cell.filter__cell--btn {
+		background-color: transparent;
+	}
+
+	.filter__cell.filter__cell--btn.active {
+		background-color: transparent;
+		box-shadow: none;
+	}
+	/* filter__cell--btn //end */
+}
