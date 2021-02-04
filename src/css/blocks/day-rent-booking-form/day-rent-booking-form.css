@@ -1,0 +1,27 @@
+.day-rent-booking-form {
+	position: relative;
+}
+
+.day-rent-booking-form__wrapper {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.day-rent-booking-form__title,
+.day-rent-booking-form__subtitle,
+.day-rent-booking-form__footer {
+	text-align: center;
+}
+
+.day-rent-booking-form__title {
+	margin-bottom: 15px;
+}
+
+.day-rent-booking-form__subtitle {
+	margin-bottom: 30px;
+}
+
+.day-rent-booking-form__footer {
+	margin-top: 20px;
+}
+

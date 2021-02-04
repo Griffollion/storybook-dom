@@ -273,6 +273,11 @@
 	padding-right: 20px;
 }
 
+.object-item.object-item--v2 .object-item__slider .slick-slide img {
+	border-radius: 10px 10px 0 0;
+	border: none;
+}
+
 /* object-item--v2 //end */
 
 /* .object-item--colored */

@@ -5,7 +5,28 @@ textarea {
 	color: #112b42;
 	max-width: 100%;
 	font: inherit;
+	line-height: 1.4;
 	transition: border-color .25s;
+}
+
+textarea::-webkit-input-placeholder {
+	color: #a2aab0;
+	font-size: 1em;
+}
+
+textarea::-moz-placeholder {
+	color: #a2aab0;
+	font-size: 1em;
+}
+
+textarea:-ms-input-placeholder {
+	color: #a2aab0;
+	font-size: 1em;
+}
+
+textarea:-moz-placeholder {
+	color: #a2aab0;
+	font-size: 1em;
 }
 
 textarea:hover,

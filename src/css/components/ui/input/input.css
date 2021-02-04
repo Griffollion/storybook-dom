@@ -170,7 +170,7 @@
 .input.input--labeled label {
 	opacity: 1;
 	z-index: 2;
-	transition: transform .25s, font-size 0.25s;
+	transition: transform .25s, font-size 0.25s, left .25s;
 }
 
 .input.input--labeled:focus-within label,
@@ -223,6 +223,13 @@
 }
 
 /* .input--ic-orange //end */
+
+/* .input--filter */
+.input.input--filter {
+	height: 70px;
+}
+
+/* .input--filter //end */
 
 /* input--medium */
 .input.input--medium input {
