@@ -22,7 +22,7 @@
 
 @media screen and (min-width: 1260px) {
 	.filter.filter--flat-day-rent .filter__grid {
-		grid-template-columns: 1fr 1fr 1fr 160px;
+		grid-template-columns: 2fr 315px 1fr 160px;
 		grid-template-areas: "cell-1 cell-2 cell-3 btn";
 		grid-gap: 0;
 	}

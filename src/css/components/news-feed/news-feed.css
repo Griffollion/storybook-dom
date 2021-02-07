@@ -23,15 +23,6 @@
 	transform: translateY(-50%);
 }
 
-.news-feed__grid-wrapper {
-	position: relative;
-	overflow: hidden;
-}
-
-.news-feed__grid.news-feed__grid--scroll-hideen {
-	margin-bottom: -8px;
-}
-
 .news-feed__grid {
 	display: grid;
 	grid-auto-flow: column;
@@ -39,21 +30,7 @@
 	grid-gap: 30px;
 	position: relative;
 	overflow-x: auto;
-}
-
-.news-feed__grid::-webkit-scrollbar {
-	height: 8px;
-	width: 8px;
-}
-
-.news-feed__grid::-webkit-scrollbar-track {
-	background: #f4f4f4;
-	border-radius: 10px;
-}
-
-.news-feed__grid::-webkit-scrollbar-thumb {
-	background-color: #d4d7d9;
-	border-radius: 10px;
+	justify-content: flex-start;
 }
 
 .news-feed__item {

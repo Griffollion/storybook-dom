@@ -23,7 +23,6 @@ body.blocked {
 /* .modal.active */
 .modal.active {
 	display: flex;
-	pointer-events: auto;
 }
 
 .modal.active .modal__content {

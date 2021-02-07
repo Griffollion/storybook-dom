@@ -12,6 +12,7 @@
 .quantitative-counter__subtitle {
 	font-size: 14px;
 	color: #a2aab0;
+	margin-top: 5px;
 }
 
 .quantitative-counter__controls {
@@ -40,4 +41,8 @@
 
 .quantitative-counter__text {
 	text-align: center;
+}
+
+.quantitative-counter.quantitative-counter--tantamount {
+	grid-template-columns: 1fr 1fr;
 }

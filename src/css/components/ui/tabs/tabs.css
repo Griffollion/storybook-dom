@@ -3,21 +3,6 @@
 	overflow-x: auto;
 }
 
-.tabs__nav::-webkit-scrollbar {
-	height: 8px;
-	width: 8px;
-}
-
-.tabs__nav::-webkit-scrollbar-track {
-	background: #f4f4f4;
-	border-radius: 10px;
-}
-
-.tabs__nav::-webkit-scrollbar-thumb {
-	background-color: #d4d7d9;
-	border-radius: 10px;
-}
-
 .tabs__nav-list {
 	display: flex;
 	padding: 0;
@@ -55,7 +40,7 @@
 	background-color: #fff;
 	border: 1px solid #cdcfd0;
 	border-radius: 3em;
-	transition: background-color .25s, border-color .25s;
+	transition: .25s;
 	color: #112b42;
 	box-sizing: border-box;
 }
@@ -118,6 +103,7 @@
 	display: inline-flex;
 	max-width: 100%;
 	position: relative;
+	transform: translateZ(0);
 }
 
 .tabs.tabs--bg .tabs__nav-list:before {

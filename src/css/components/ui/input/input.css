@@ -95,7 +95,7 @@
 	font-size: 1em;
 }
 
-.input [class^="ic-"], [class*=" ic-"] {
+.input [class^="ic-"], .input [class*=" ic-"] {
 	pointer-events: none;
 	color: #a2aab0;
 	padding-left: 0.9375em;
@@ -226,7 +226,16 @@
 
 /* .input--filter */
 .input.input--filter {
-	height: 70px;
+	height: 100%;
+	border: none;
+}
+
+.input.input--filter {
+	background-color: transparent;
+}
+
+.input.input--filter input {
+	padding: 36px 26px 12px 26px;
 }
 
 /* .input--filter //end */

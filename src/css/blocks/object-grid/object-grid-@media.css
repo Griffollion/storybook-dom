@@ -1,0 +1,26 @@
+
+@media screen and (min-width: 1200px) {
+	.object-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 30px;
+	}
+
+	.object-grid__links,
+	.object-grid__banner {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+	.object-grid__banner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #eaebee;
+		box-sizing: border-box;
+		border-radius: 10px;
+		min-height: 200px;
+		background-color: #ebebeb;
+	}
+
+}

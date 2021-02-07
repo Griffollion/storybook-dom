@@ -1,0 +1,41 @@
+.text-center {
+	text-align: center;
+}
+
+.accent,
+.bold {
+	font-weight: 700;
+}
+
+.light {
+	font-weight: 300;
+}
+
+/* scroll-pretty */
+.scroll-pretty::-webkit-scrollbar {
+	height: 8px;
+	width: 8px;
+}
+
+.scroll-pretty::-webkit-scrollbar-track {
+	background: #f4f4f4;
+	border-radius: 10px;
+}
+
+.scroll-pretty::-webkit-scrollbar-thumb {
+	background-color: #d4d7d9;
+	border-radius: 10px;
+}
+
+/* scroll-pretty //end */
+
+/* scroll-visually-hidden */
+.scroll-visually-hidden {
+	position: relative;
+	overflow: hidden;
+}
+
+.scroll-visually-hidden > * {
+	margin-bottom: 0;
+}
+/* scroll-visually-hidden //end */

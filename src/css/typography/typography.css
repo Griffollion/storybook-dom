@@ -35,12 +35,3 @@ h5, .h5 {
 	font-size: 14px;
 	line-height: 15px;
 }
-
-.accent,
-.bold {
-	font-weight: 700;
-}
-
-.light {
-	font-weight: 300;
-}
