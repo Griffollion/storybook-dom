@@ -1,0 +1,145 @@
+.usermenu {
+	position: relative;
+	display: inline-flex;
+	justify-content: flex-end;
+}
+
+.usermenu__user {
+	background: #fff;
+	border-radius: 100px;
+	box-sizing: border-box;
+	padding: 7px;
+	display: inline-flex;
+	align-items: center;
+	width: 34px;
+	transition: width .35s;
+	position: relative;
+	overflow: hidden;
+}
+
+.usermenu__user:hover {
+	width: 80px;
+}
+
+.usermenu__user-avatar {
+	color: #112b42;
+	font-size: 0;
+	padding-right: 7px;
+
+}
+
+.usermenu__user-name {
+	font-size: 14px;
+}
+
+.usermenu__menu {
+	position: absolute;
+	right: 0;
+	top: calc(100% + 5px);
+	padding: 15px;
+	background: #fff;
+	box-shadow: 0 4px 15px rgba(0, 17, 51, 0.1);
+	border-radius: 3px;
+	z-index: 10;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-20px);
+	transition: transform .35s, opacity .35s;
+	min-width: 100%;
+}
+
+.usermenu__menu:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: -5px;
+	height: 5px;
+	width: 100%;
+	z-index: 2;
+}
+
+.usermenu__menu-item {
+	margin-bottom: 15px;
+	font-size: 14px;
+	position: relative;
+}
+
+.usermenu__menu-item:last-child {
+	margin-bottom: 0;
+	padding-top: 15px;
+}
+
+.usermenu__menu-item:nth-last-child(2) {
+	padding-top: 15px;
+}
+
+.usermenu__menu-item:nth-last-child(2):before,
+.usermenu__menu-item:last-child:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 1px;
+	width: calc(100% + 30px);
+	background-color: #dfdfdf;
+	margin-left: -15px;
+}
+
+.usermenu__menu-item,
+.usermenu__menu-item a {
+	display: flex;
+	align-items: center;
+}
+
+.usermenu__menu-item i {
+	font-size: 22px;
+	color: #112b42;
+}
+
+.usermenu__menu-item:not(:hover) a {
+	color: #112b42;
+}
+
+.usermenu__notifications {
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 50%;
+	background-color: #ff7d2f;
+	font-size: 10px;
+	position: absolute;
+	top: 1px;
+	left: 18px;
+	z-index: 2;
+	pointer-events: none;
+	padding: 0.2em 0.415em;
+	line-height: 1;
+}
+
+/* usermenu--logged */
+.usermenu.usermenu--logged .usermenu__user {
+	width: auto;
+	font-weight: 700;
+	color: #112b42;
+}
+
+.usermenu.usermenu--logged .usermenu__user:after {
+	content: "\e90e";
+	font-family: iconfont;
+	margin-left: 5px;
+	transition: transform .35s;
+	font-size: 10px;
+}
+
+.usermenu.usermenu--logged.active .usermenu__menu,
+.usermenu.usermenu--logged:hover .usermenu__menu {
+	transform: translate(0);
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.usermenu.usermenu--logged.active .usermenu__user:after,
+.usermenu.usermenu--logged:hover .usermenu__user:after {
+	transform: rotate(180deg);
+}
+
+/* usermenu--logged //end */

@@ -11,6 +11,14 @@
 	font-weight: 300;
 }
 
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 /* scroll-pretty */
 .scroll-pretty::-webkit-scrollbar {
 	height: 8px;
@@ -38,4 +46,5 @@
 .scroll-visually-hidden > * {
 	margin-bottom: 0;
 }
+
 /* scroll-visually-hidden //end */

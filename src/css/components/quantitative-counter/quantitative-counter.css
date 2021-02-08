@@ -32,6 +32,11 @@
 	border-radius: 50%;
 	transition: background-color .25s, border-color .25s;
 	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .quantitative-counter__btn:hover {
