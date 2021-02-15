@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+	.auth-form__row.mob\:auth-form__row--col-1 {
+		grid-template-columns: 1fr fit-content(100%);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.auth-form__row.tablet\:auth-form__row--col-1 {
+		grid-template-columns: 1fr fit-content(100%);
+	}
+}

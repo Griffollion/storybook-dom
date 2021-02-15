@@ -235,7 +235,9 @@
 }
 
 .input.input--filter input {
-	padding: 36px 26px 12px 26px;
+	padding-top: 36px;
+	padding-bottom: 12px;
+	padding-left: 26px;
 }
 
 /* .input--filter //end */
@@ -265,4 +267,3 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
 	transition: background-color 5000s ease-in-out 0s !important;
 }
-

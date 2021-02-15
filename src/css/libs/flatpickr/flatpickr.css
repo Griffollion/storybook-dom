@@ -1,5 +1,4 @@
 .flatpickr-calendar {
-	background: transparent;
 	opacity: 0;
 	display: none;
 	text-align: center;
@@ -31,7 +30,8 @@
 
 .flatpickr-calendar.open {
 	display: inline-block;
-	z-index: 99999
+	z-index: 99999;
+	transform: translateY(3px);
 }
 
 .flatpickr-calendar.animate.open {
@@ -53,11 +53,6 @@
 .flatpickr-calendar.static.open {
 	z-index: 999;
 	display: block
-}
-
-.flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+1) .flatpickr-day.inRange:nth-child(7n+7) {
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important
 }
 
 .flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+2) .flatpickr-day.inRange:nth-child(7n+1) {
@@ -327,7 +322,6 @@
 
 .flatpickr-current-month {
 	font-size: 135%;
-	line-height: inherit;
 	font-weight: 300;
 	color: inherit;
 	position: absolute;

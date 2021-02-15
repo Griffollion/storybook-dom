@@ -26,6 +26,12 @@
 	grid-column-gap: 10px;
 }
 
+.auth-form__row.mob\:auth-form__row--col-1,
+.auth-form__row.tablet\:auth-form__row--col-1 {
+	grid-template-columns: 100%;
+	grid-gap: 10px;
+}
+
 .auth-form__row.hidden {
 	display: none;
 }
@@ -34,7 +40,7 @@
 	margin-top: 50px;
 	margin-bottom: 40px;
 	position: relative;
-	border: 1px solid #eaebee;
+	border-top: 1px solid #eaebee;
 }
 
 .auth-form__delimiter:before {
