@@ -258,10 +258,15 @@
 }
 
 .object-item__btn {
-	margin-top: 15px;
 	display: flex;
 	flex-grow: 1;
 	align-items: flex-end;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.object-item__btn > * {
+	margin-top: 15px;
 }
 
 /* object-item--v2 */

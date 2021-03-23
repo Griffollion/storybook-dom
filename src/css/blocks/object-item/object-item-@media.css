@@ -1,3 +1,9 @@
+@media screen and (min-width: 768px) {
+	.object-item__btn {
+		flex-wrap: nowrap;
+	}
+}
+
 @media screen and (min-width: 1260px) {
 	.object-item {
 		max-width: 380px;

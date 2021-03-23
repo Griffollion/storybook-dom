@@ -73,6 +73,13 @@ body.blocked {
 
 /* modal__content--scrollable-x //end */
 
+/* modal__content--fixed-width */
+.modal__content.modal__content--fixed-width {
+	max-width: 600px;
+}
+
+/* modal__content--fixed-width //end */
+
 /* modal__content--adaptive */
 .modal__content.modal__content--adaptive {
 	width: auto;
